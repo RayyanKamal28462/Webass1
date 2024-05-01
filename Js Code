@@ -1,0 +1,35 @@
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+} 
+
+function moveAll() {
+    var widths = [1, 1, 1, 1];
+    var ids = ['myBar1', 'myBar2', 'myBar3', 'myBar4'];
+    var max_widths = [70, 70, 90, 80];
+    var intervalIds = [];
+    for (var i = 0; i < widths.length; i++) {
+        var elem = document.getElementById(ids[i]);
+        var id = setInterval(frame.bind(null, i), 10);
+        intervalIds.push(id);
+    }
+    function frame(index) {
+        if (widths[index] >= max_widths[index]) {
+            clearInterval(intervalIds[index]);
+        } else {
+            widths[index]++;
+            var elem = document.getElementById(ids[index]);
+            elem.style.width = widths[index] + '%';
+            elem.innerHTML = widths[index] * 1  + '%';
+        }
+    }
+}
