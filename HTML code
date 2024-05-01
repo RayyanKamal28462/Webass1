@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mycard {
+            max-width: 350px;
+            height: 400px;
+            margin: 10px;
+            text-align: justify;
+        }
+
+        body {
+            font-family: Garamond, serif;
+            font-size: larger;
+            color: black;
+        }
+
+        @media screen and (min-width: 1920px) {
+            body {
+                max-width: 60%;
+                margin: auto;
+            }
+        }
+
+        .collapsible {
+            background-color: #f0e68c;
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 27px;
+            margin: 0 auto;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #c7b721;
+        }
+
+        .content {
+            width: 100%;
+            display: none;
+            overflow: hidden;
+            background-color: #f0e68c;
+            padding: 18px; 
+        }
+
+        @media screen and (max-width: 768px) {
+            .collapsible {
+                font-size: 20px;
+            }
+
+            .content {
+                width: 100%;
+                padding: 5px;
+            }
+        }
+    </style>
+    <title>Assignment 1</title>
+</head>
+<body>
+    <header><!-- START HEADER -->
+
+        <div class="w3-container w3-padding w3-animate-left">
+            <div class="w3-container w3-row w3-margin-bottom">
+                <div class="w3-container w3-third ">
+                    <img src="Gmbr.jpg" style="height: 100%; max-width: 100%;" alt="Profile Picture">
+                </div>
+                <div class="w3-container w3-twothird w3-khaki w3-margin-bottom">
+                    <h1 style="text-align: center;">Siti Nur Rayyan Mohamad Kamal</h1>
+                    <p style="text-align: justify;">I'm a third-year student that has
+                        experience in computer network. In order to develop the coding,
+                        graphic design, and social skills that will be in high demand 
+                        in the future, I am passionate about gaining experience and
+                        knowledge in these fields. To increase my abilities, experiences,
+                        and knowledge, I'm looking for something innovative and 
+                        ambitious for the future.</p>
+                </div>
+                    <div class="w3-container w3-twothird w3-khaki">
+                    <p style="text-align: justify;">Phone number: 01111015205</p>
+                    <p style="text-align: justify;">Address: 3503-E, Kota Bharu, Kelantan</p>
+                </div>
+            </div>
+        </div>
+    </header><!-- END HEADER -->
+
+    <div style="min-height: 100vh; overflow-y: auto;"><!--FOR LENGTH -->
+        
+        <!-- EDU -->
+
+        <div class="w3-container w3-col w3-half w3-margin-bottom">
+            <button type="button" class="collapsible">EDUCATION</button>
+            <div class="content">
+                <ul>
+                    <li>University Utara Malaysia (UUM) 
+                        <ul>
+                            <li>2021-2024</li>
+                            <li>Bachelor of Science with Hons (Information Technology)</li>
+                            <li>Majoring in Computer Network</li>
+                            <li>Current CGPA = 3.40 (semester 6)</li>
+                        </ul>
+                    </li>
+                    <li>Matriculation College Kelantan (KMKt) 
+                        <ul>
+                            <li>2019-2021</li>
+                            <li>Science: Module 1</li>
+                        </ul>
+                    </li>
+                    <li>Sekolah Menengah Kebangsaan Sultan Ismail (SMKSI)
+                        <ul>
+                            <li>2014-2018</li>
+                            <li>Science stream</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><br>
+        </div>
+        
+        <!-- WORK EXP -->
+
+        <div class="w3-container w3-col w3-half w3-margin-bottom">
+            <button type="button" class="collapsible">WORK EXPERIENCE</button>
+            <div class="content">
+                <ul>
+                    <li>Animation freelancer</li>
+                    <ul>
+                        <li>Make animation using Adobe Animation</li>
+                        <li>Design character</li>
+                        <li>Motion graphic</li>
+                    </ul>
+                </ul>
+            </div><br>
+        </div>
+        <!-- SKILLS -->
+        <div class="w3-container w3-row">
+            <div class="w3-container w3-col w3-khaki">
+                <h2 style="text-align: left;">SKILLS</h2>
+                <!-- Button for all progress bars -->
+                <button class="w3-button w3-light-gray w3-button w3-round-xxlarge" onclick="moveAll()">Click Me</button>
+                <!-- Progress bars -->
+                <p><li>Microsoft Word, Microsoft Excel, and Microsoft Power Point</li></p>
+                <div class="w3-white ">
+                    <div id="myBar1" class="w3-container w3-black w3-center" style="width:20%">10%</div>
+                </div>
+                <p><li>NetBeans, Eclipse and Visual Studio</li></p>
+                <div class="w3-white ">
+                    <div id="myBar2" class="w3-container w3-black w3-center" style="width:20%">10%</div>
+                </div>
+                <p><li>Unity, Xampp, Adobe Animate, Adobe Photoshop, Spss, and Draw.io</li></p>
+                <div class="w3-white ">
+                    <div id="myBar3" class="w3-container w3-black w3-center" style="width:20%">10%</div>
+                </div>
+                <p><li>Programming Language: Java, JavaScript, Css,PHP, C#, W3.Css, MySQL and HTML</li></p>
+                <div class="w3-white ">
+                    <div id="myBar4" class="w3-container w3-black w3-center" style="width:20%">10%</div>
+                </div>
+                <br>
+            </div>
+        </div>
+<!-- PROJECT -->
+        <div class="w3-container w3-row w3-card w3-margin w3-khaki">
+            <h3>PROJECTS</h3>
+            <h5>Title: My Diet project</h5>
+            <ul>
+                <li>Storyboarding</li>
+                <li>Design character</li>
+                <li>Collaboration and Communication</li>
+
+            </ul>
+                
+        </div>
+            
+    </div>
+    <!-- FOOTER -->
+    <footer class="w3-container w3-center w3-khaki w3-animate-left">
+        <p><a href="https://www.linkedin.com/in/rayyan-kamal-733713236/" target="_blank">LinkedIn: www.linkedin.com/in/rayyan-kamal-733713236</a></p>
+        <p><a href="mailto:srayyankamal22@gmail.com" target="_blank">Email: srayyankamal22@gmail.com</a></p>
+    </footer>
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        } 
+
+        function moveAll() {
+            // Function to increase the width of all progress bars
+            var widths = [1, 1, 1, 1]; 
+            var ids = ['myBar1', 'myBar2', 'myBar3', 'myBar4']; // IDs of progress bars
+            var max_widths = [70, 70, 90, 80]; // Maximum widths for each progress bar
+            var intervalIds = []; 
+            for (var i = 0; i < widths.length; i++) {
+                var elem = document.getElementById(ids[i]);
+                var id = setInterval(frame.bind(null, i), 10); 
+                intervalIds.push(id); // Store interval ID
+            }
+            function frame(index) {
+                if (widths[index] >= max_widths[index]) {
+                    clearInterval(intervalIds[index]); 
+                } else {
+                    widths[index]++;
+                    var elem = document.getElementById(ids[index]);
+                    elem.style.width = widths[index] + '%';
+                    elem.innerHTML = widths[index] * 1  + '%';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
