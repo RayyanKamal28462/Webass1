@@ -1,0 +1,56 @@
+
+.mycard {
+    max-width: 350px;
+    height: 400px;
+    margin: 10px;
+    text-align: justify;
+}
+
+body {
+    font-family: Garamond, serif;
+    font-size: larger;
+    color: black;
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        max-width: 60%;
+        margin: auto;
+    }
+}
+
+.collapsible {
+    background-color: #f0e68c;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 27px;
+    margin: 0 auto;
+}
+
+.active, .collapsible:hover {
+    background-color: #c7b721;
+}
+
+.content {
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    background-color: #f0e68c;
+    padding: 18px; 
+}
+
+@media screen and (max-width: 768px) {
+    .collapsible {
+        font-size: 20px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 5px;
+    }
+}
